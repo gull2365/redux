@@ -41,8 +41,8 @@ const dispatchAddTodo = text => {
 };
 
 const dispatchDeleteToDO = e => {
-  const id = e.target.parentNode.id;
-  store.dispatch({type:DELETE_TODO, id})
+  const id = parseInt(e.target.parentNode.id);
+  store.dispatch(deleteToDO(id));
 }
 
 const paintToDos = () => {
