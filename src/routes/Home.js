@@ -5,10 +5,14 @@ function Home() {
   function onChange(e) {
     setText(e.target.value);
   }
+  function onSubmit(e) {
+    e.preventDefalut();
+    console.log(text);
+  }
   return (
     <>
       <h1>To Do</h1>
-      <form>
+      <form onuSubmit={onSubmit}>
         <input type="text" value={text} onchange={onChange} />
         <button>ADD</button>
       </form>
