@@ -32,7 +32,7 @@ const store = createStore(reducer);
 
 export const actionCreators = {
     addToDO,
-    deleteToDO
+    deleteToDO 
 }
 
 export default store;
